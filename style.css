@@ -1,17 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #111111;
+  background-color: #1e1e1e;
   color: #f3f3f3;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  height: 0rem;
-}
-header h1 {
-  padding: 10rem;
+body {
+  min-height: 100vh;
+  position: absolute;
 }
 
 .project-list {
@@ -23,28 +19,61 @@ header h1 {
 
 .project-card {
   padding: 1rem;
-  width: 600px;
+  width: 300px;
 }
 .project-card .project-card__view {
-  width: 10rem;
-  height: 7rem;
-  background-color: #333333;
+  width: 100%;
+  height: 10rem;
+  background-color: #2c2c2c;
+}
+.project-card .project-card__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 1rem;
 }
 .project-card .project-card__button {
-  background-color: #333333;
+  background-color: #2c2c2c;
   padding: 1rem;
-  border: 0 solid #333333;
+  border: 0 solid #2c2c2c;
   display: inline-block;
 }
 .project-card .project-card__button--1 {
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
 }
 .project-card .project-card__button--2 {
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
+}
+.project-card .project-card__button--3 {
+  width: 45%;
+}
+.project-card .project-card__button--4 {
+  width: 45%;
 }
 .project-card .project-card__button:hover {
   background-color: #21b4ce;
 }
 .project-card .project-card__button:active {
   -webkit-box-shadow: inset 1px 1px 10px rgb(13, 212, 226);
+}
+.footer {
+  height: 3rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  position: absolute;
+  bottom: 0px;
+}
+.footer .footer__button {
+  padding: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #555555;
 }/*# sourceMappingURL=style.css.map */
