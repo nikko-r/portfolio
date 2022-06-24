@@ -14,7 +14,6 @@ body {
 }
 
 .nav {
-    position: absolute;
     top: 0px;
     height: 7rem;
     display: flex;
@@ -22,21 +21,24 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 85vw;
-    margin-left: 10rem;
-    margin-right: 5rem;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 1rem;
     .nav__title {
         font-size: 3rem;
         font-weight: 300;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
     .nav__title-span {
         color: #d79a4b;
     }
     .nav__links {
         list-style-type: none;
-        display: inline;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        display: inline-block;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
 
@@ -48,6 +50,13 @@ main {
     padding-right: 10vw;
 }
 
+.project-list-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 6vw;
+}
+
 .project-list {
     /*houses all the project-card elements and aranges them*/
     display: flex;
@@ -55,13 +64,13 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    border: 0px solid rgb(41, 41, 41);
     /*sperates the project list from the top nav bar*/
-    margin-top: 10rem;
 }
 
 .project-card {
     /*represents each card element in the flex parent*/
-    width: 22rem;
+    width: 21rem;
     margin: 2rem;
     height: 18rem;
     .project-card__view {
