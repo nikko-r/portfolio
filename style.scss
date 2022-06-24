@@ -47,9 +47,12 @@ main {
     }
     .project-card__button {
         background-color: #2c2c2c;
-        padding: 1rem;
         border: 0 solid #2c2c2c;
         display: inline-block;
+        text-align: center;
+        line-height: 35%;
+        font-size: 1rem;
+        padding: 5px;
         &--1 {
             width: 1rem;
             height: 1rem;
@@ -61,10 +64,16 @@ main {
             border-radius: 50%;
         }
         &--3 {
-            width: 45%
+            width: 5rem;
+            height: 2rem;
+            border: 2px solid #563d7c;
+            border-radius: 50px;
         }
         &--4 {
-            width: 45%;
+            width: 4rem;
+            height: 2rem;
+            border: 2px solid #563d7c;
+            border-radius: 50px;
         }
         &:hover {
             background-color: #21b4ce;
