@@ -35,7 +35,6 @@ body {
   list-style-type: none;
   display: block;
   text-align: center;
-  padding-bottom: 0.5rem;
   font-size: 1.7rem;
 }
 
@@ -116,6 +115,12 @@ main {
 .project-card .project-card__button:active {
   -webkit-box-shadow: inset 1px 1px 10px rgb(13, 212, 226);
 }
+.about-me .about-me__text {
+  padding: 1rem;
+  display: block;
+  height: 20rem;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
@@ -136,6 +141,11 @@ main {
   border-radius: 50%;
   margin: 1%;
 }
+.footer .footer__button .footer__image {
+  width: 1.3rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 @media screen and (min-width: 1000px) {
   .nav {
     top: 0px;
@@ -168,5 +178,11 @@ main {
     flex-direction: row;
     margin-left: 6vw;
     margin-top: 5vh;
+  }
+
+  .page-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6vw;
   }
 }/*# sourceMappingURL=style.css.map */
