@@ -16,29 +16,26 @@ body {
 .nav {
     top: 0px;
     height: 7rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: block;
     align-items: center;
-    justify-content: space-between;
-    width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 6rem;
     .nav__title {
         font-size: 3rem;
         font-weight: 300;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        text-align: center;
+        padding: 1rem;
     }
     .nav__title-span {
         color: #d79a4b;
     }
     .nav__links {
         list-style-type: none;
-        display: inline-block;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        display: block;
+        text-align: center;
+        padding-bottom: 0.5rem; //seperated out the space between the lines
+        font-size: 1.7rem;
     }
 }
 
@@ -51,10 +48,9 @@ main {
 }
 
 .project-list-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-left: 6vw;
+    display: block;
+    margin-top: 5vh;
+    text-align: center;
 }
 
 .project-list {
@@ -143,5 +139,39 @@ main {
         border-radius: 50%;
         margin: 1%;
         &--1 {}
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .nav {
+        top: 0px;
+        height: 7rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 1rem;
+        .nav__title {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+        .nav__links {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+    }
+    .project-list-title {
+        display: flex;
+        flex-direction: row;
+        margin-left: 6vw;
+        margin-top: 5vh;
     }
 }
