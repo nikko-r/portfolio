@@ -13,8 +13,8 @@
     <nav class="nav">
         <h1 class="nav__title">Nikko <span class="nav__title-span">R</span></h1>
         <ul class="nav__links">
-            <li class="nav__links nav__links--1"><a href="#">About</a></li>
-            <li class="nav__links nav__links--2"><a href="#">Portfolio</a></li>
+            <li class="nav__links nav__links--1"><a href="#about">About</a></li>
+            <li class="nav__links nav__links--2"><a href="#portfolio">Portfolio</a></li>
             <li class="nav__links nav__links--3"><a href="#">CV</a></li>
             <li class="nav__links nav__links--3"><a href="#">Contact</a></li>
         </ul>
@@ -25,71 +25,67 @@
     <main>
         <h1 class="page-title">Junior Software Developer</h1>
         <h1 class="project-list-title">PORTFOLIO</h1>
-        <div class="project-list">
-            <div class="project-card">
-                <img class="project-card__view" src="./images/code.jpg" alt="sample code">
-                <h1 class="project-card__title">PROJECT 1</h1>
-                <button type="button" class="project-card__button project-card__button--1">👁</button>
-                <button type="button" class="project-card__button project-card__button--2">< / ></button>
-                <div class="project-card__title-divider"></div>
-                <button type="button" class="project-card__button project-card__button--3">REACT</button>
-                <button type="button" class="project-card__button project-card__button--4">SCSS</button>
-            </div>
-            <div class="project-card">
-                <img class="project-card__view" src="./images/code.jpg" alt="sample code">
-                <h1 class="project-card__title">PROJECT 2</h1>
-                <button type="button" class="project-card__button project-card__button--1">👁</button>
-                <button type="button" class="project-card__button project-card__button--2">< / ></button>
-                <div class="project-card__title-divider"></div>
-                <button type="button" class="project-card__button project-card__button--3">REACT</button>
-                <button type="button" class="project-card__button project-card__button--4">SCSS</button>
-            </div>
-            <div class="project-card">
-                <img class="project-card__view" src="./images/code.jpg" alt="sample code">
-                <h1 class="project-card__title">PROJECT 3</h1>
-                <button type="button" class="project-card__button project-card__button--1">👁</button>
-                <button type="button" class="project-card__button project-card__button--2">< / ></button>
-                <div class="project-card__title-divider"></div>
-                <button type="button" class="project-card__button project-card__button--3">REACT</button>
-                <button type="button" class="project-card__button project-card__button--4">SCSS</button>
-            </div>
-            <div class="project-card">
-                <img class="project-card__view" src="./images/code.jpg" alt="sample code">
-                <h1 class="project-card__title">PROJECT 4</h1>
-                <button type="button" class="project-card__button project-card__button--1">👁</button>
-                <button type="button" class="project-card__button project-card__button--2">< / ></button>
-                <div class="project-card__title-divider"></div>
-                <button type="button" class="project-card__button project-card__button--3">REACT</button>
-                <button type="button" class="project-card__button project-card__button--4">SCSS</button>
-            </div>
-            <div class="project-card">
-                <img class="project-card__view" src="./images/code.jpg" alt="sample code">
-                <h1 class="project-card__title">PROJECT 5</h1>
-                <button type="button" class="project-card__button project-card__button--1">👁</button>
-                <button type="button" class="project-card__button project-card__button--2">< / ></button>
-                <div class="project-card__title-divider"></div>
-                <button type="button" class="project-card__button project-card__button--3">REACT</button>
-                <button type="button" class="project-card__button project-card__button--4">SCSS</button>
-            </div>
-            <div class="project-card">
-                <img class="project-card__view" src="./images/code.jpg" alt="sample code">
-                <h1 class="project-card__title">PROJECT 6</h1>
-                <button type="button" class="project-card__button project-card__button--1">👁</button>
-                <button type="button" class="project-card__button project-card__button--2">< / ></button>
-                <div class="project-card__title-divider"></div>
-                <button type="button" class="project-card__button project-card__button--3">REACT</button>
-                <button type="button" class="project-card__button project-card__button--4">SCSS</button>
-            </div>
+        <div id="portfolio" class="project-list">
+            <section class="project-card">
+                <img class="project-card__view" src="./images/calculator.png" alt="sample code">
+                <div class="project-card__section">
+                    <h1 class="project-card__title">CALCULATOR</h1>
+                    <div>
+                        <button type="button" onclick="location.href='https://nikko-r.github.io/Calculator-Project/';" class="project-card__button project-card__button--1">👁</button>
+                        <button type="button" onclick="location.href='https://github.com/nikko-r/Calculator-Project';" class="project-card__button project-card__button--2">< / ></button>
+                    </div>
+                </div>
+                <div class="project-card__section">
+                    <div>
+                        <button type="button" class="project-card__languages project-card__languages--1">HTML</button>
+                        <button type="button" class="project-card__languages project-card__languages--2">CSS</button>
+                        <button type="button" class="project-card__languages project-card__languages--3">SCSS</button>
+                        <button type="button" class="project-card__languages project-card__languages--4">JS</button>
+                    </div>
+                </div>
+            </section>
+            <section class="project-card">
+                <img class="project-card__view" src="./images/tic-tac-toe.png" alt="sample code">
+                <div class="project-card__section">
+                    <h1 class="project-card__title">TIC-TAC-TOE</h1>
+                    <div>
+                        <button type="button" onclick="location.href='https://nikko-r.github.io/tic-tac-toe-project/';" class="project-card__button project-card__button--1">👁</button>
+                        <button type="button" onclick="location.href='https://github.com/nikko-r/tic-tac-toe-project';" class="project-card__button project-card__button--2">< / ></button>
+                    </div>
+                </div>
+                <div class="project-card__section">
+                    <div>
+                        <button type="button" class="project-card__languages project-card__languages--1">HTML</button>
+                        <button type="button" class="project-card__languages project-card__languages--2">CSS</button>
+                        <button type="button" class="project-card__languages project-card__languages--3">SCSS</button>
+                        <button type="button" class="project-card__languages project-card__languages--4">JS</button>
+                    </div>
+                </div>
+            </section>
+
         </div>
-        <div class="about-me">
-            <h1 class="about-me__title">ABOUT</h1>
+        <div id="about" class="about-me">
+            <h1 class="titles about-me__title">ABOUT</h1>
             <p class="about-me__text">I am a Junior Software Developer based in London.</p>
 
         </div>
+
+        <div class="exp-interests">
+
+            <div class="experience">
+                <h1 class="experience__title">EXPERIENCE</h1>
+                <p class="experience__text">nology</p>
+            </div>
+            <div class="interests">
+                <h1 class="interests__title">INTERESTS</h1>
+                <p class="interests__text">Art</p>
+            </div>
+        </div>
     </main>
+    <div class="bottom-div"></div>
     <footer class="footer">
         <button type="button" class="footer__button footer__button--1"><img class="footer__image" src="./images/linkedin.svg" alt="git hub"></button>
-        <button type="button" class="footer__button footer__button--2"><img class="footer__image" src="./images/github.svg" alt="linked in"></button>
+        <button type="button" class="footer__button footer__button--2" onclick="location.href='https://github.com/nikko-r';"><img class="footer__image" src="./images/github.svg" alt="linked in"></button>
         <button type="button" class="footer__button footer__button--3"><img class="footer__image" src="./images/cv.svg" alt="cv"></button>
     </footer>
 </body>
