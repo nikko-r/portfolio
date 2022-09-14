@@ -24,8 +24,9 @@ body {
 
 #header {
     background: linear-gradient( 92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
-    min-height: 275px;
+    // min-height: 275px;
     color: #fafafa;
+    height: fit-content;
 }
 
 .header-text-div {
@@ -42,11 +43,19 @@ body {
             background-color: #111111;
             padding: 0.3rem;
         }
+        span:hover {
+            color: #111111;
+            background-color: #fafafa;
+        }
         &--line3 {
             text-align: right;
             span {
                 color: #111111;
                 background-color: #fafafa;
+            }
+            span:hover {
+                color: #111111;
+                background-color: transparent;
             }
         }
     }

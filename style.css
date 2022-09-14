@@ -24,8 +24,10 @@ body {
 
 #header {
   background: linear-gradient(92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
-  min-height: 275px;
   color: #fafafa;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .header-text-div {
@@ -44,10 +46,18 @@ body {
   background-color: #111111;
   padding: 0.3rem;
 }
+.header-text-div .header-text span:hover {
+  color: #111111;
+  background-color: #fafafa;
+}
 .header-text-div .header-text--line3 {
   text-align: right;
 }
 .header-text-div .header-text--line3 span {
   color: #111111;
   background-color: #fafafa;
+}
+.header-text-div .header-text--line3 span:hover {
+  color: #111111;
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
