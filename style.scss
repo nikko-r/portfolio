@@ -18,6 +18,7 @@ body {
 }
 
 #nav-bar {
+    color: #111111;
     background-color: #fafafa;
     min-height: 45px;
 }
@@ -56,9 +57,62 @@ body {
             span:hover {
                 color: #111111;
                 background-color: transparent;
+                font-style: italic;
+            }
+            span:hover:before {
+                content: "_";
             }
         }
     }
 }
 
 #main-content {}
+
+.slidein-left {
+    float: left;
+    animation-duration: 1.5s;
+    animation-name: slideinleft;
+}
+
+@keyframes slideinleft {
+    from {
+        margin-left: -30%;
+        opacity: 0%;
+    }
+    to {
+        margin-left: 0%;
+        opacity: 100%;
+    }
+}
+
+.slidein-right {
+    float: right;
+    animation-duration: 1.5s;
+    animation-name: slideinright;
+}
+
+@keyframes slideinright {
+    from {
+        margin-right: -30%;
+        opacity: 0;
+    }
+    to {
+        margin-right: 0%;
+        opacity: 100%;
+    }
+}
+
+* {
+    float: bottom;
+    animation-duration: 1s;
+    animation-name: fadein;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}

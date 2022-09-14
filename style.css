@@ -18,6 +18,7 @@ body {
 }
 
 #nav-bar {
+  color: #111111;
   background-color: #fafafa;
   min-height: 45px;
 }
@@ -60,4 +61,92 @@ body {
 .header-text-div .header-text--line3 span:hover {
   color: #111111;
   background-color: transparent;
+  font-style: italic;
+}
+.header-text-div .header-text--line3 span:hover:before {
+  content: "_";
+}
+
+.slidein-left {
+  float: left;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+@-webkit-keyframes slideinleft {
+  from {
+    margin-left: -30%;
+    opacity: 0%;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: -30%;
+    opacity: 0%;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
+}
+.slidein-right {
+  float: right;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+@-webkit-keyframes slideinright {
+  from {
+    margin-right: -30%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideinright {
+  from {
+    margin-right: -30%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0%;
+    opacity: 100%;
+  }
+}
+* {
+  float: bottom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
