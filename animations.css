@@ -1,0 +1,141 @@
+a {
+  display: inline-block;
+  position: relative;
+  color: #111111;
+  text-decoration: none;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.slidein-left {
+  float: left;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideinleft;
+          animation-name: slideinleft;
+}
+
+@-webkit-keyframes slideinleft {
+  from {
+    margin-left: -30%;
+    opacity: 0%;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: -30%;
+    opacity: 0%;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
+}
+.slidein-right {
+  float: right;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: slideinright;
+          animation-name: slideinright;
+}
+
+@-webkit-keyframes slideinright {
+  from {
+    margin-right: -30%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideinright {
+  from {
+    margin-right: -30%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0%;
+    opacity: 100%;
+  }
+}
+.slidein-up {
+  float: top;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinup;
+          animation-name: slideinup;
+}
+
+@-webkit-keyframes slideinup {
+  from {
+    margin-bottom: -5%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideinup {
+  from {
+    margin-bottom: -5%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 100%;
+  }
+}
+* {
+  float: bottom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}/*# sourceMappingURL=animations.css.map */
