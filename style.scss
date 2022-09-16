@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("animations.css");
+@import url("portfolio.css");
 :root {
     --chroma-color-left: rgb(233, 74, 74);
     --chroma-color-right: rgb(202, 51, 178);
@@ -36,6 +37,7 @@ nav {
         justify-content: space-evenly;
         flex-wrap: wrap;
         a {
+            margin: 0.4rem;
             margin-left: 2rem;
             margin-right: 2rem;
         }
@@ -99,76 +101,11 @@ header {
 }
 
 main {
-    margin: 5rem;
-}
-
-#portfolio-card-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    animation-duration: 3s;
-    animation-name: fadeinlong;
-}
-
-.portfolio-card {
-    margin: 2rem;
-    img {
-        height: 12rem;
-        width: 22rem;
-        transition: all 0.4s ease-in-out;
-    }
-    img:hover {
-        cursor: pointer;
-        transform: scale(1.03);
-    }
-    .portfolio-card__title {
-        display: flex;
-        justify-content: space-between;
-    }
-    .portfolio-card__title-buttons {
-        button {
-            color: #fafafa;
-            background: #111111;
-            border-radius: 50px;
-            border: #fafafa solid 1px;
-            font-weight: 600;
-            transition: all 0.3s ease-in-out;
-        }
-        button:hover {
-            cursor: pointer;
-            color: #111111;
-            background: #fafafa;
-        }
-    }
-    .portfolio-card__languages {
-        display: flex;
-    }
-    .portfolio-card__language {
-        width: 4rem;
-        height: 1.2rem;
-        border-radius: 1px;
-        text-align: center;
-        margin-right: 3px;
-        &--html {
-            border: solid 2px #21b4ce;
-        }
-        &--css {
-            border: solid 2px #ba21ce;
-        }
-        &--scss {
-            border: solid 2px #52ce21;
-        }
-        &--js {
-            border: solid 2px #9016e0;
-        }
-        &--react {
-            border: solid 2px #e016b4;
-        }
-    }
+    margin: 7rem;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     margin: 10px;
 }
