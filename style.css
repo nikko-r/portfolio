@@ -18,7 +18,10 @@ body {
   background-color: #111111;
 }
 
-#nav-bar {
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: #fafafa;
   min-height: 45px;
   display: flex;
@@ -27,15 +30,20 @@ body {
   align-items: center;
   padding: 0.2rem;
 }
-#nav-bar * {
+nav * {
   color: #111111;
 }
-#nav-bar .nav-bar-secondary-links a {
+nav .nav-bar-secondary-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+nav .nav-bar-secondary-links a {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-#header {
+header {
   background: linear-gradient(92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
   color: #fafafa;
   height: -webkit-fit-content;
@@ -77,4 +85,68 @@ body {
 }
 .header-text-div .header-text--line3 span:hover:before {
   content: "_";
+}
+
+.header-text-div-resize {
+  height: 180px;
+}
+
+main {
+  margin: 3rem;
+}
+
+#portfolio-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.portfolio-card img {
+  height: 12rem;
+  width: 22rem;
+}
+.portfolio-card img:hover {
+  cursor: pointer;
+}
+.portfolio-card .portfolio-card__title {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-card .portfolio-card__title-buttons button {
+  color: #111111;
+  background: #fafafa;
+  border-radius: 50px;
+  border: #fafafa solid 1px;
+  font-weight: 600;
+}
+.portfolio-card .portfolio-card__title-buttons button:hover {
+  cursor: pointer;
+}
+.portfolio-card .portfolio-card__languages {
+  display: flex;
+}
+.portfolio-card .portfolio-card__language {
+  width: 4rem;
+  height: 1.2rem;
+  border-radius: 50px;
+  text-align: center;
+  margin-right: 3px;
+}
+.portfolio-card .portfolio-card__language--html {
+  border: solid 1px #21b4ce;
+}
+.portfolio-card .portfolio-card__language--css {
+  border: solid 1px #ba21ce;
+}
+.portfolio-card .portfolio-card__language--scss {
+  border: solid 1px #52ce21;
+}
+.portfolio-card .portfolio-card__language--js {
+  border: solid 1px #9016e0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */

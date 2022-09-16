@@ -95,7 +95,7 @@ a:active {
 
 @-webkit-keyframes slideinup {
   from {
-    margin-bottom: -5%;
+    margin-bottom: -3%;
     opacity: 0;
   }
   to {
@@ -106,7 +106,7 @@ a:active {
 
 @keyframes slideinup {
   from {
-    margin-bottom: -5%;
+    margin-bottom: -3%;
     opacity: 0;
   }
   to {
@@ -116,8 +116,8 @@ a:active {
 }
 * {
   float: bottom;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-name: fadein;
           animation-name: fadein;
 }

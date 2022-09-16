@@ -79,7 +79,7 @@ a:active {
 
 @keyframes slideinup {
     from {
-        margin-bottom: -5%;
+        margin-bottom: -3%;
         opacity: 0;
     }
     to {
@@ -93,7 +93,7 @@ a:active {
 // /////////////////////////////////
 * {
     float: bottom;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: fadein;
 }
 

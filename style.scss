@@ -18,10 +18,12 @@ body {
     background-color: #111111;
 }
 
-#nav-bar {
+nav {
     * {
         color: #111111;
     }
+    position: sticky; //keeps nav bar at top of screen on scroll.
+    top: 0;
     background-color: #fafafa;
     min-height: 45px;
     display: flex;
@@ -30,6 +32,9 @@ body {
     align-items: center;
     padding: 0.2rem;
     .nav-bar-secondary-links {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
         a {
             margin-left: 2rem;
             margin-right: 2rem;
@@ -37,7 +42,7 @@ body {
     }
 }
 
-#header {
+header {
     background: linear-gradient( 92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
     // min-height: 275px;
     color: #fafafa;
@@ -48,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 275px;
+    // height: fit-content;
     justify-content: space-evenly;
     width: fit-content;
     margin-left: 10%;
@@ -80,4 +86,70 @@ body {
     }
 }
 
-#main-content {}
+.header-text-div-resize {
+    height: 180px;
+}
+
+main {
+    margin: 3rem;
+}
+
+#portfolio-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+    img {
+        height: 12rem;
+        width: 22rem;
+    }
+    img:hover {
+        cursor: pointer;
+    }
+    .portfolio-card__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .portfolio-card__title-buttons {
+        button {
+            color: #111111;
+            background: #fafafa;
+            border-radius: 50px;
+            border: #fafafa solid 1px;
+            font-weight: 600;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+    }
+    .portfolio-card__languages {
+        display: flex;
+    }
+    .portfolio-card__language {
+        width: 4rem;
+        height: 1.2rem;
+        border-radius: 50px;
+        text-align: center;
+        margin-right: 3px;
+        &--html {
+            border: solid 1px #21b4ce;
+        }
+        &--css {
+            border: solid 1px #ba21ce;
+        }
+        &--scss {
+            border: solid 1px #52ce21;
+        }
+        &--js {
+            border: solid 1px #9016e0;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    margin: 10px;
+}
