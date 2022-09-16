@@ -89,6 +89,26 @@ a:active {
 }
 
 ////////////////////////////////////
+/// SLIDE IN down
+// /////////////////////////////////
+.slidein-down {
+    float: top;
+    animation-duration: 2s;
+    animation-name: slideindown;
+}
+
+@keyframes slideindown {
+    from {
+        margin-bottom: 3%;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 0%;
+        opacity: 100%;
+    }
+}
+
+////////////////////////////////////
 /// FADE IN
 // /////////////////////////////////
 * {
@@ -98,6 +118,22 @@ a:active {
 }
 
 @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+////////////////////////////////////
+/// FADE IN LONG
+// /////////////////////////////////
+// * {
+//     animation-duration: 1s;
+//     animation-name: fadeinlong;
+// }
+@keyframes fadeinlong {
     from {
         opacity: 0;
     }

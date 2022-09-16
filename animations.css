@@ -114,6 +114,35 @@ a:active {
     opacity: 100%;
   }
 }
+.slidein-down {
+  float: top;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideindown;
+          animation-name: slideindown;
+}
+
+@-webkit-keyframes slideindown {
+  from {
+    margin-bottom: 3%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideindown {
+  from {
+    margin-bottom: 3%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 100%;
+  }
+}
 * {
   float: bottom;
   -webkit-animation-duration: 0.5s;
@@ -132,6 +161,22 @@ a:active {
 }
 
 @keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeinlong {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes fadeinlong {
   from {
     opacity: 0;
   }
