@@ -1,0 +1,108 @@
+:root {
+  --chroma-color-left: rgb(233, 74, 74);
+  --chroma-color-right: rgb(202, 51, 178);
+}
+
+* {
+  margin: 0;
+  color: #fafafa;
+  font-family: Inter;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111111;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+  min-height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+}
+nav * {
+  color: #111111;
+}
+nav .nav-bar-secondary-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+nav .nav-bar-secondary-links a {
+  margin: 0.4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+nav .a-selected {
+  color: #fafafa;
+  background-color: #111111;
+  padding: 0.3rem;
+}
+
+header {
+  background: linear-gradient(92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
+  color: #fafafa;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.header-text-div {
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  justify-content: space-evenly;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+.header-text-div .header-text span {
+  color: #fafafa;
+  background-color: #111111;
+  padding: 0.3rem;
+}
+.header-text-div .header-text span:hover {
+  color: #111111;
+  background-color: #fafafa;
+}
+.header-text-div .header-text--line3 {
+  text-align: right;
+}
+.header-text-div .header-text--line3 span {
+  color: #111111;
+  background-color: #fafafa;
+}
+.header-text-div .header-text--line3 span:hover {
+  color: #111111;
+  background-color: transparent;
+  font-style: italic;
+}
+.header-text-div .header-text--line3 span:hover:before {
+  content: "_";
+}
+
+.header-text-div-resize {
+  height: 180px;
+}
+
+main {
+  margin: 7rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  margin: 10px;
+  padding: 0.3rem;
+  background-color: #111111;
+}/*# sourceMappingURL=main.css.map */

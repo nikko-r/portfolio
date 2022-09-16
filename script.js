@@ -1,7 +1,11 @@
 const root = document.querySelector(":root");
+const getRndInteger = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
 
 let chromaRgbLeft = [233, 74, 74];
 let chromaRgbRight = [202, 51, 178];
+
 let chromaRgb = [233, 74, 74];
 let chromaProcess = 1;
 const chromaCycle = () => {
