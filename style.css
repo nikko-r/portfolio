@@ -42,6 +42,11 @@ nav .nav-bar-secondary-links a {
   margin-left: 2rem;
   margin-right: 2rem;
 }
+nav .a-selected {
+  color: #fafafa;
+  background-color: #111111;
+  padding: 0.3rem;
+}
 
 header {
   background: linear-gradient(92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
