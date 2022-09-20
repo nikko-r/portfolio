@@ -1,0 +1,15 @@
+#about-container {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: fadeinlong;
+          animation-name: fadeinlong;
+}
+#about-container h2 span {
+  background-color: #fafafa;
+  color: #111111;
+  padding: 0.1rem;
+}
+#about-container h2 span:hover {
+  background-color: #111111;
+  color: #fafafa;
+}/*# sourceMappingURL=about.css.map */

@@ -26,7 +26,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 0.2rem;
+  padding: 1rem;
 }
 nav * {
   color: #111111;
@@ -96,7 +96,8 @@ header {
 }
 
 main {
-  margin: 7rem;
+  margin: 3rem;
+  padding-bottom: 10rem;
 }
 
 footer {
