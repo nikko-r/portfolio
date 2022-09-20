@@ -1,0 +1,15 @@
+#contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  padding: 1rem;
+  border: 2px solid #fafafa;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  color: #111111;
+  background-color: #fafafa;
+}/*# sourceMappingURL=contact.css.map */
