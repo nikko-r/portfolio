@@ -1,111 +1,117 @@
 :root {
-    --chroma-color-left: rgb(233, 74, 74);
-    --chroma-color-right: rgb(202, 51, 178);
+  --chroma-color-left: rgb(233, 74, 74);
+  --chroma-color-right: rgb(202, 51, 178);
 }
 
 * {
-    margin: 0;
-    color: #fafafa;
-    font-family: Inter;
-    font-weight: 400;
+  margin: 0;
+  color: #fafafa;
+  font-family: Inter;
+  font-weight: 400;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #111111;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111111;
 }
 
 nav {
-    * {
-        color: #111111;
-    }
-    position: sticky; //keeps nav bar at top of screen on scroll.
-    top: 0;
-    background-color: #fafafa;
-    min-height: 45px;
+  * {
+    color: #111111;
+  }
+  position: sticky; //keeps nav bar at top of screen on scroll.
+  top: 0;
+  background-color: #fafafa;
+  min-height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  .nav-bar-secondary-links {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    .nav-bar-secondary-links {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        a {
-            margin: 0.4rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
+    a {
+      margin: 0.4rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
-    .a-selected {
-        color: #fafafa;
-        background-color: #111111;
-        padding: 0.3rem;
-    }
-    // .a-selected:hover {
-    //     cursor: default;
-    // }
+  }
+  .a-selected {
+    color: #fafafa;
+    background-color: #111111;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  // .a-selected:hover {
+  //     cursor: default;
+  // }
 }
 
 header {
-    background: linear-gradient( 92.09deg, var(--chroma-color-left) 0%, var(--chroma-color-right) 100%);
-    // min-height: 275px;
-    color: #fafafa;
-    height: fit-content;
+  background: linear-gradient(
+    92.09deg,
+    var(--chroma-color-left) 0%,
+    var(--chroma-color-right) 100%
+  );
+  // min-height: 275px;
+  color: #fafafa;
+  height: fit-content;
 }
 
 .header-text-div {
-    display: flex;
-    flex-direction: column;
-    height: 275px;
-    // height: fit-content;
-    justify-content: space-evenly;
-    width: fit-content;
-    margin-left: 10%;
-    margin-right: 5%;
-    .header-text {
-        span {
-            color: #fafafa;
-            background-color: #111111;
-            padding: 0.3rem;
-        }
-        span:hover {
-            color: #111111;
-            background-color: #fafafa;
-        }
-        &--line3 {
-            text-align: right;
-            span {
-                color: #111111;
-                background-color: #fafafa;
-            }
-            span:hover {
-                color: #111111;
-                background-color: transparent;
-                font-style: italic;
-            }
-            span:hover:before {
-                content: "_";
-            }
-        }
+  display: flex;
+  flex-direction: column;
+  height: 275px;
+  // height: fit-content;
+  justify-content: space-evenly;
+  width: fit-content;
+  margin-left: 10%;
+  margin-right: 5%;
+  .header-text {
+    span {
+      color: #fafafa;
+      background-color: #111111;
+      padding: 0.5rem;
+      border-radius: 10px;
     }
+    span:hover {
+      color: #111111;
+      background-color: #fafafa;
+    }
+    &--line3 {
+      text-align: right;
+      span {
+        color: #111111;
+        background-color: #fafafa;
+      }
+      span:hover {
+        color: #111111;
+        background-color: transparent;
+        font-style: italic;
+      }
+      span:hover:before {
+        content: "_";
+      }
+    }
+  }
 }
 
 .header-text-div-resize {
-    height: 180px;
+  height: 180px;
 }
 
 main {
-    margin: 3rem;
-    padding-bottom: 10rem;
+  margin: 3rem;
+  padding-bottom: 10rem;
 }
 
 footer {
-    position: fixed;
-    bottom: 0px;
-    margin: 10px;
-    padding: 0.3rem;
-    background-color: #111111;
+  position: fixed;
+  bottom: 0px;
+  margin: 10px;
+  padding: 0.3rem;
+  background-color: #111111;
 }

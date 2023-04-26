@@ -1,15 +1,16 @@
 #contact-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-button {
-    padding: 1rem;
-    border: 2px solid #fafafa;
-    text-decoration: none;
+  padding: 1rem;
+  border: 2px solid #fafafa;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .contact-button:hover {
-    color: #111111;
-    background-color: #fafafa;
+  color: #111111;
+  background-color: #fafafa;
 }

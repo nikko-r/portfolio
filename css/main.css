@@ -43,7 +43,8 @@ nav .nav-bar-secondary-links a {
 nav .a-selected {
   color: #fafafa;
   background-color: #111111;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 header {
@@ -66,7 +67,8 @@ header {
 .header-text-div .header-text span {
   color: #fafafa;
   background-color: #111111;
-  padding: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 .header-text-div .header-text span:hover {
   color: #111111;

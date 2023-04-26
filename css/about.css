@@ -5,7 +5,8 @@
 #about-container h2 span {
   background-color: #fafafa;
   color: #111111;
-  padding: 0.1rem;
+  padding: 0.3rem;
+  border-radius: 10px;
 }
 #about-container h2 span:hover {
   background-color: #111111;
