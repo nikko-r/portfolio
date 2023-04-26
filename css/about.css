@@ -1,8 +1,6 @@
 #about-container {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: fadeinlong;
-          animation-name: fadeinlong;
+  animation-duration: 3s;
+  animation-name: fadeinlong;
 }
 #about-container h2 span {
   background-color: #fafafa;

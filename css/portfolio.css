@@ -1,11 +1,13 @@
-#portfolio-card-container {
+.portfolio-card-container-title {
+  margin-left: 7%;
+}
+
+.portfolio-card-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: fadeinlong;
-          animation-name: fadeinlong;
+  animation-duration: 3s;
+  animation-name: fadeinlong;
 }
 
 .portfolio-card {
