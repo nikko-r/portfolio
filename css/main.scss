@@ -17,37 +17,51 @@ body {
 }
 
 nav {
+  background-color: #fafafa;
   * {
     color: #111111;
   }
-  position: sticky; //keeps nav bar at top of screen on scroll.
-  top: 0;
-  background-color: #fafafa;
-  min-height: 45px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  .nav-bar-secondary-links {
+  .nav-content {
+    position: sticky; //keeps nav bar at top of screen on scroll.
+    top: 0;
+
+    min-height: 45px;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    a {
-      margin: 0.4rem;
-      margin-left: 2rem;
-      margin-right: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    .nav-bar-secondary-links {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      a {
+        margin: 0.4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
     }
+    .a-selected {
+      color: #fafafa;
+      background-color: #111111;
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+    // .a-selected:hover {
+    //     cursor: default;
+    // }
   }
-  .a-selected {
-    color: #fafafa;
-    background-color: #111111;
-    padding: 0.5rem;
-    border-radius: 10px;
+}
+
+@media only screen and (min-width: 1921px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  // .a-selected:hover {
-  //     cursor: default;
-  // }
+  .nav-content {
+    width: 1920px;
+  }
 }
 
 header {
@@ -106,6 +120,8 @@ header {
 main {
   margin: 3rem;
   padding-bottom: 10rem;
+  animation-duration: 3s;
+  animation-name: fadeinlong;
 }
 
 footer {
