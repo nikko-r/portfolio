@@ -23,8 +23,14 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .nav-content,
-  .header-content {
+  .header-content,
+  .main-content {
     width: 1920px;
   }
 }
@@ -75,8 +81,8 @@ header {
   justify-content: space-evenly;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: 10%;
-  margin-right: 5%;
+  margin-left: 3rem;
+  margin-right: 2rem;
 }
 .header-text-div .header-text span {
   color: #fafafa;
