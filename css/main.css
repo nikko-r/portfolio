@@ -1,6 +1,6 @@
 :root {
   --chroma-color-left: rgb(233, 74, 74);
-  --chroma-color-right: rgb(202, 51, 178);
+  --chroma-color-right: rgb(202, 51, 177);
 }
 
 * {
@@ -18,11 +18,7 @@ body {
 
 @media only screen and (min-width: 1921px) {
   nav,
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  header,
   main {
     display: flex;
     flex-direction: column;

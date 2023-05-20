@@ -1,129 +1,129 @@
 // //////////////////////////////
 .a-ul {
-    display: inline-block;
-    position: relative;
-    color: #111111;
-    text-decoration: none;
+  display: inline-block;
+  position: relative;
+  color: #111111;
+  text-decoration: none;
 }
 
 .a-ul:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #111111;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .a-ul:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .a-ul:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 ////////////////////////////////////
 /// SLIDE IN LEFT
 // /////////////////////////////////
 .slidein-left {
-    float: left;
-    animation-duration: 1.5s;
-    animation-name: slideinleft;
+  float: left;
+  animation-duration: 1.5s;
+  animation-name: slideinleft;
 }
 
 @keyframes slideinleft {
-    from {
-        margin-left: -30%;
-        opacity: 0%;
-    }
-    to {
-        margin-left: 0%;
-        opacity: 100%;
-    }
+  from {
+    margin-left: -30%;
+    opacity: 0%;
+  }
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
 }
 
 ////////////////////////////////////
 /// SLIDE IN RIGHT
 // /////////////////////////////////
 .slidein-right {
-    float: right;
-    animation-duration: 1.5s;
-    animation-name: slideinright;
+  float: right;
+  animation-duration: 1.5s;
+  animation-name: slideinright;
 }
 
 @keyframes slideinright {
-    from {
-        margin-right: -30%;
-        opacity: 0;
-    }
-    to {
-        margin-right: 0%;
-        opacity: 100%;
-    }
+  from {
+    margin-right: -30%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0%;
+    opacity: 100%;
+  }
 }
 
 ////////////////////////////////////
 /// SLIDE IN UP
 // /////////////////////////////////
 .slidein-up {
-    float: top;
-    animation-duration: 2s;
-    animation-name: slideinup;
+  float: top;
+  animation-duration: 2s;
+  animation-name: slideinup;
 }
 
 @keyframes slideinup {
-    from {
-        margin-bottom: -3%;
-        opacity: 0;
-    }
-    to {
-        margin-bottom: 0%;
-        opacity: 100%;
-    }
+  from {
+    margin-bottom: -3%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 100%;
+  }
 }
 
 ////////////////////////////////////
 /// SLIDE IN down
 // /////////////////////////////////
 .slidein-down {
-    float: top;
-    animation-duration: 2s;
-    animation-name: slideindown;
+  float: top;
+  animation-duration: 2s;
+  animation-name: slideindown;
 }
 
 @keyframes slideindown {
-    from {
-        margin-bottom: 3%;
-        opacity: 0;
-    }
-    to {
-        margin-bottom: 0%;
-        opacity: 100%;
-    }
+  from {
+    margin-bottom: 3%;
+    opacity: 0;
+  }
+  to {
+    margin-bottom: 0%;
+    opacity: 100%;
+  }
 }
 
 ////////////////////////////////////
 /// FADE IN
 // /////////////////////////////////
 * {
-    float: bottom;
-    animation-duration: 0.5s;
-    animation-name: fadein;
+  float: bottom;
+  animation-duration: 0.7s;
+  animation-name: fadein;
 }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 100%;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 ////////////////////////////////////
@@ -134,10 +134,10 @@
 //     animation-name: fadeinlong;
 // }
 @keyframes fadeinlong {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 100%;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
