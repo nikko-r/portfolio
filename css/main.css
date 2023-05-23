@@ -17,6 +17,9 @@ body {
 }
 
 @media only screen and (min-width: 1921px) {
+  .main-content {
+    padding-left: 6rem;
+  }
   nav,
   header,
   main {
