@@ -3,8 +3,16 @@ main {
   flex-direction: column;
 }
 
-.portfolio-card-container-title {
-  margin-left: 7%;
+.portfolio-subtitle {
+  text-decoration: underline;
+  color: #ffffff;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+.portfolio-subtitle:hover {
+  background-color: #fafafa;
+  color: #111111;
 }
 
 .portfolio-card-container {
@@ -32,7 +40,7 @@ main {
 .portfolio-card .portfolio-card__title-buttons button {
   color: #fafafa;
   background: #111111;
-  border-radius: 50px;
+  border-radius: 10px;
   border: #fafafa solid 1px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
@@ -51,6 +59,7 @@ main {
   border-radius: 1px;
   text-align: center;
   margin-right: 3px;
+  border-radius: 7px;
 }
 .portfolio-card .portfolio-card__language--html {
   border: solid 2px #21b4ce;

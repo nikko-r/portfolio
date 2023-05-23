@@ -1,1 +1,11 @@
-/*# sourceMappingURL=home.css.map */
+.main-content-subtitle {
+  background-color: #fafafa;
+  color: #111111;
+  padding: 0.3rem;
+  border-radius: 10px;
+}
+
+.main-content-subtitle:hover {
+  background-color: #111111;
+  color: #fafafa;
+}/*# sourceMappingURL=home.css.map */

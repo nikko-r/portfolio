@@ -1,10 +1,10 @@
 #about-container h2 span {
-  background-color: #fafafa;
-  color: #111111;
+  text-decoration: underline;
+  color: #ffffff;
   padding: 0.3rem;
   border-radius: 10px;
 }
 #about-container h2 span:hover {
-  background-color: #111111;
-  color: #fafafa;
+  background-color: #fafafa;
+  color: #111111;
 }/*# sourceMappingURL=about.css.map */
