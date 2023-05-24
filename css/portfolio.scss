@@ -32,7 +32,7 @@ main {
   flex-wrap: wrap;
 }
 
-.portfolio-card {
+.webdev-portfolio-card {
   margin: 2rem;
   img {
     height: 12rem;
@@ -43,11 +43,11 @@ main {
     cursor: pointer;
     transform: scale(1.03);
   }
-  .portfolio-card__title {
+  .webdev-portfolio-card__title {
     display: flex;
     justify-content: space-between;
   }
-  .portfolio-card__title-buttons {
+  .webdev-portfolio-card__title-buttons {
     button {
       color: #fafafa;
       background: #111111;
@@ -62,10 +62,10 @@ main {
       background: #fafafa;
     }
   }
-  .portfolio-card__languages {
+  .webdev-portfolio-card__languages {
     display: flex;
   }
-  .portfolio-card__language {
+  .webdev-portfolio-card__language {
     width: 4rem;
     height: 1.2rem;
     border-radius: 1px;
