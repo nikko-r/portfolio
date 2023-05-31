@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -77,4 +82,10 @@ main {
 }
 .webdev-portfolio-card .webdev-portfolio-card__language--react {
   border: solid 2px #e016b4;
+}
+
+.ui-img {
+  height: auto;
+  width: 2rem;
+  transition: all 0.4s ease-in-out;
 }/*# sourceMappingURL=portfolio.css.map */
