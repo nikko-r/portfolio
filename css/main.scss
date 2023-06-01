@@ -36,14 +36,14 @@ body {
 
 nav {
   background-color: #fafafa;
+  position: sticky; //keeps nav bar at top of screen on scroll.
+  top: 0;
+  z-index: 1;
+  min-height: 45px;
   * {
     color: #111111;
   }
   .nav-content {
-    position: sticky; //keeps nav bar at top of screen on scroll.
-    top: 0;
-
-    min-height: 45px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
