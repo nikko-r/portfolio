@@ -23,9 +23,16 @@ main {
 
 .portfolio-subtitle {
   text-decoration: underline;
-  color: #ffffff;
+  color: #a7a7a7;
   padding: 0.3rem;
   border-radius: 10px;
+  &--2::before {
+    content: "UI .DESIGN";
+  }
+  &--2:hover::before {
+    font-style: italic;
+    content: "UX DESIGN";
+  }
 }
 .portfolio-subtitle:hover {
   background-color: #fafafa;
@@ -37,9 +44,14 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+.webdev-portfolio-card:hover {
+  border: white 3px solid;
+  img {
+    transform: scale(1.03);
+  }
+}
 .webdev-portfolio-card {
-  border: white 7px solid;
+  border: transparent 3px solid;
   padding: 7px;
   margin: 1rem;
   img {
@@ -49,7 +61,6 @@ main {
   }
   img:hover {
     cursor: pointer;
-    transform: scale(1.03);
   }
   .webdev-portfolio-card__title {
     display: flex;
@@ -99,18 +110,18 @@ main {
 }
 
 .uidesign-portfolio-card {
-  background-color: white;
-  border: white 0.8rem solid;
+  background-color: transparent;
+  border: transparent 10px solid;
   margin: 1rem;
   width: 22rem;
   h2 {
     font-weight: 500;
-    color: #111111;
+    color: #fafafa;
   }
   p {
-    color: #111111;
+    color: #999999;
     span {
-      color: #505050;
+      color: #535353;
     }
   }
   img,
@@ -120,9 +131,31 @@ main {
     transition: all 0.4s ease-in-out;
     background-color: #111111;
   }
-  img:hover,
-  video:hover {
-    cursor: pointer;
+  // img:hover,
+  // video:hover {
+  //   cursor: pointer;
+  //   transform: scale(1.03);
+  // }
+}
+
+.uidesign-portfolio-card:hover {
+  background-color: white;
+  border: white 10px solid;
+  margin: 1rem;
+  width: 22rem;
+  h2 {
+    font-weight: 500;
+    color: #111111;
+  }
+  p {
+    color: #222222;
+    span {
+      color: #777777;
+    }
+  }
+  img,
+  video {
     transform: scale(1.03);
   }
+  cursor: pointer;
 }

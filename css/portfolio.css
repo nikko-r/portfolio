@@ -10,9 +10,16 @@ main {
 
 .portfolio-subtitle {
   text-decoration: underline;
-  color: #ffffff;
+  color: #a7a7a7;
   padding: 0.3rem;
   border-radius: 10px;
+}
+.portfolio-subtitle--2::before {
+  content: "UI .DESIGN";
+}
+.portfolio-subtitle--2:hover::before {
+  font-style: italic;
+  content: "UX DESIGN";
 }
 
 .portfolio-subtitle:hover {
@@ -26,8 +33,15 @@ main {
   flex-wrap: wrap;
 }
 
+.webdev-portfolio-card:hover {
+  border: white 3px solid;
+}
+.webdev-portfolio-card:hover img {
+  transform: scale(1.03);
+}
+
 .webdev-portfolio-card {
-  border: white 7px solid;
+  border: transparent 3px solid;
   padding: 7px;
   margin: 1rem;
 }
@@ -38,7 +52,6 @@ main {
 }
 .webdev-portfolio-card img:hover {
   cursor: pointer;
-  transform: scale(1.03);
 }
 .webdev-portfolio-card .webdev-portfolio-card__title {
   display: flex;
@@ -85,20 +98,20 @@ main {
 }
 
 .uidesign-portfolio-card {
-  background-color: white;
-  border: white 0.8rem solid;
+  background-color: transparent;
+  border: transparent 10px solid;
   margin: 1rem;
   width: 22rem;
 }
 .uidesign-portfolio-card h2 {
   font-weight: 500;
-  color: #111111;
+  color: #fafafa;
 }
 .uidesign-portfolio-card p {
-  color: #111111;
+  color: #999999;
 }
 .uidesign-portfolio-card p span {
-  color: #505050;
+  color: #535353;
 }
 .uidesign-portfolio-card img,
 .uidesign-portfolio-card video {
@@ -107,8 +120,25 @@ main {
   transition: all 0.4s ease-in-out;
   background-color: #111111;
 }
-.uidesign-portfolio-card img:hover,
-.uidesign-portfolio-card video:hover {
+
+.uidesign-portfolio-card:hover {
+  background-color: white;
+  border: white 10px solid;
+  margin: 1rem;
+  width: 22rem;
   cursor: pointer;
+}
+.uidesign-portfolio-card:hover h2 {
+  font-weight: 500;
+  color: #111111;
+}
+.uidesign-portfolio-card:hover p {
+  color: #222222;
+}
+.uidesign-portfolio-card:hover p span {
+  color: #777777;
+}
+.uidesign-portfolio-card:hover img,
+.uidesign-portfolio-card:hover video {
   transform: scale(1.03);
 }/*# sourceMappingURL=portfolio.css.map */
