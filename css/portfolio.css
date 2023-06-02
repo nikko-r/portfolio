@@ -32,6 +32,9 @@ main {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.portfolio-card-container a {
+  text-decoration: none;
+}
 
 .webdev-portfolio-card:hover {
   border: white 3px solid;
