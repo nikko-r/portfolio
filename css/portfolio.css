@@ -107,7 +107,6 @@ main {
   width: 22rem;
 }
 .uidesign-portfolio-card h2 {
-  font-weight: 500;
   color: #fafafa;
 }
 .uidesign-portfolio-card p {
@@ -132,7 +131,6 @@ main {
   cursor: pointer;
 }
 .uidesign-portfolio-card:hover h2 {
-  font-weight: 500;
   color: #111111;
 }
 .uidesign-portfolio-card:hover p {
